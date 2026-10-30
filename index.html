@@ -1,0 +1,501 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#11100e">
+
+    <title>AFTERIMAGE — The Lost Archive</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="grain"></div>
+
+    <div class="topbar">
+        <a href="#" class="logo">AFTER<span>IMAGE</span><sup>®</sup></a>
+
+        <div class="system-status">
+            <span class="status-dot"></span>
+            ARCHIVE SYSTEM ONLINE
+        </div>
+
+        <button class="menu-button" id="menuToggle">☰</button>
+    </div>
+
+    <nav class="navigation" id="navigation">
+        <a href="#home">00 / HOME</a>
+        <a href="#terminal">01 / TERMINAL</a>
+        <a href="#vault">02 / MEMORY VAULT</a>
+        <a href="#ofrenda">03 / OFRENDA</a>
+        <a href="#frequencies">04 / FREQUENCIES</a>
+    </nav>
+
+    <main>
+
+        <!-- HERO -->
+
+        <section class="hero" id="home">
+
+            <div class="hero-left">
+
+                <div class="eyebrow">
+                    <span class="status-dot"></span>
+                    ESTABLISHED 19—UNKNOWN
+                </div>
+
+                <h1>
+                    SOME THINGS<br>
+                    NEVER REALLY<br>
+                    <em>DISAPPEAR.</em>
+                </h1>
+
+                <p class="hero-description">
+                    An archive for forgotten stories, lost memories,
+                    strange transmissions and things the world
+                    almost forgot.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#terminal" class="primary-button">
+                        ENTER THE ARCHIVE ↗
+                    </a>
+
+                    <a href="#vault" class="secondary-button">
+                        PRESERVE A MEMORY
+                    </a>
+                </div>
+
+                <div class="hero-footnote">
+                    <span>FIG. 001</span>
+                    <span>THE HUMAN MEMORY PROJECT</span>
+                    <span>EST. 2026</span>
+                </div>
+
+            </div>
+
+            <div class="hero-art">
+
+                <div class="orbit orbit-one"></div>
+                <div class="orbit orbit-two"></div>
+
+                <div class="artifact">
+                    <div class="artifact-label">ARCHIVE OBJECT / 001</div>
+
+                    <div class="artifact-symbol">✳</div>
+
+                    <div class="artifact-bottom">
+                        <span>MEMORY PRESERVED</span>
+                        <span>DO NOT ERASE</span>
+                    </div>
+                </div>
+
+                <div class="floating-note note-one">
+                    "I remember this place."
+                </div>
+
+                <div class="floating-note note-two">
+                    SIGNAL DETECTED...
+                </div>
+
+            </div>
+
+        </section>
+
+        <div class="ticker">
+            <div class="ticker-content">
+                MEMORIES ARE DATA · STORIES ARE SIGNALS ·
+                NOTHING IS EVER COMPLETELY LOST ·
+                MEMORIES ARE DATA · STORIES ARE SIGNALS ·
+                NOTHING IS EVER COMPLETELY LOST ·
+            </div>
+        </div>
+
+
+        <!-- INTRO -->
+
+        <section class="intro-section">
+
+            <div class="section-label">[ A NOTE FROM THE ARCHIVIST ]</div>
+
+            <div class="intro-content">
+                <h2>
+                    The internet forgets.<br>
+                    <em>We don't have to.</em>
+                </h2>
+
+                <p>
+                    Every photograph, every voice note, every little
+                    story carries a piece of someone. AFTERIMAGE is
+                    a small attempt to keep those pieces alive.
+                    Not through a corporation. Not through a
+                    subscription. But through an open archive
+                    that belongs to you.
+                </p>
+            </div>
+
+        </section>
+
+
+        <!-- GHOST TERMINAL -->
+
+        <section class="terminal-section" id="terminal">
+
+            <div class="section-label">01 / THE GHOST TERMINAL</div>
+
+            <div class="terminal-heading">
+                <h2>Something is <em>listening.</em></h2>
+
+                <p>
+                    Feed the machine a memory, a place or a feeling.
+                    See what comes back.
+                </p>
+            </div>
+
+            <div class="terminal-window">
+
+                <div class="terminal-top">
+                    <div class="terminal-lights">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                    <span>AFTERIMAGE_TERMINAL.EXE</span>
+
+                    <span class="terminal-version">V.02.06</span>
+                </div>
+
+                <div class="terminal-body">
+
+                    <div class="terminal-welcome">
+                        <p>AFTERIMAGE MEMORY ENGINE [VERSION 02.06]</p>
+                        <p>OPEN-WEIGHT LANGUAGE SYSTEM</p>
+                        <p>------------------------------------</p>
+                        <p>CONNECTION ESTABLISHED.</p>
+                        <p>THE MACHINE IS WAITING FOR A MEMORY.</p>
+                        <br>
+                    </div>
+
+                    <label for="ghostInput">> ENTER YOUR TRANSMISSION</label>
+
+                    <textarea
+                        id="ghostInput"
+                        placeholder="I once visited an abandoned house..."
+                        maxlength="500"
+                    ></textarea>
+
+                    <div class="terminal-controls">
+                        <span id="modelStatus">MODEL: NOT INITIALIZED</span>
+
+                        <button id="generateBtn" class="terminal-button">
+                            TRANSMIT ↗
+                        </button>
+                    </div>
+
+                    <div class="terminal-output" id="ghostOutput">
+                        <span class="output-label">
+                            [ INCOMING TRANSMISSION ]
+                        </span>
+
+                        <p>
+                            Waiting for a signal...
+                        </p>
+                    </div>
+
+                    <div class="terminal-footer">
+                        <span>LOCAL INFERENCE EXPERIMENT</span>
+                        <span>YOUR INPUT STAYS IN THIS BROWSER</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <p class="terminal-disclaimer">
+                AI-generated fiction. The machine does not communicate
+                with spirits or retrieve information from the dead.
+            </p>
+
+        </section>
+
+
+        <!-- MEMORY VAULT -->
+
+        <section class="vault-section" id="vault">
+
+            <div class="section-label">02 / THE MEMORY VAULT</div>
+
+            <div class="vault-heading">
+                <div>
+                    <h2>Leave something <em>behind.</em></h2>
+
+                    <p>
+                        A memory doesn't need to be extraordinary
+                        to deserve a place in the archive.
+                    </p>
+                </div>
+
+                <div class="vault-count">
+                    <span id="memoryCount">00</span>
+                    <small>ARCHIVED RECORDS</small>
+                </div>
+            </div>
+
+            <div class="memory-layout">
+
+                <div class="memory-form">
+
+                    <span class="form-label">NEW ARCHIVE ENTRY / 001</span>
+
+                    <label for="memoryTitle">TITLE</label>
+                    <input
+                        type="text"
+                        id="memoryTitle"
+                        placeholder="A summer I never forgot"
+                        maxlength="70"
+                    >
+
+                    <label for="memoryName">ARCHIVED UNDER</label>
+                    <input
+                        type="text"
+                        id="memoryName"
+                        placeholder="A name or nickname"
+                        maxlength="50"
+                    >
+
+                    <label for="memoryText">THE MEMORY</label>
+                    <textarea
+                        id="memoryText"
+                        placeholder="Write down what you want to preserve..."
+                        maxlength="1500"
+                    ></textarea>
+
+                    <button class="primary-button full-button" id="saveMemory">
+                        PRESERVE THIS MEMORY +
+                    </button>
+
+                    <p class="privacy-note">
+                        🔒 Stored locally in this browser.
+                        No account required.
+                    </p>
+
+                </div>
+
+                <div class="memory-collection">
+
+                    <div class="collection-header">
+                        <span>RECENTLY RECOVERED</span>
+                        <span>FILE DIRECTORY / 001</span>
+                    </div>
+
+                    <div id="memoryList" class="memory-list">
+                        <div class="empty-state">
+                            <span>✳</span>
+                            <p>THE ARCHIVE IS EMPTY.</p>
+                            <small>YOUR FIRST MEMORY IS WAITING.</small>
+                        </div>
+                    </div>
+
+                    <button class="export-button" id="exportMemories">
+                        EXPORT ARCHIVE ↓
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- DIGITAL OFRENDA -->
+
+        <section class="ofrenda-section" id="ofrenda">
+
+            <div class="section-label">03 / THE DIGITAL OFRENDA</div>
+
+            <div class="ofrenda-intro">
+                <div>
+                    <h2>A place to <em>remember.</em></h2>
+
+                    <p>
+                        Inspired by the tradition of Día de los Muertos,
+                        create a tribute celebrating someone's life,
+                        stories and the little things they loved.
+                    </p>
+                </div>
+
+                <div class="flower-decoration">✿</div>
+            </div>
+
+            <div class="ofrenda-card">
+
+                <div class="ofrenda-decoration">
+                    ✿ &nbsp; ✺ &nbsp; ✿ &nbsp; ✺ &nbsp; ✿
+                </div>
+
+                <div class="ofrenda-inner">
+
+                    <div class="candle">🕯️</div>
+
+                    <div class="ofrenda-symbol">✿</div>
+
+                    <div class="ofrenda-form">
+
+                        <span class="form-label">
+                            A SMALL TRIBUTE / A LASTING MEMORY
+                        </span>
+
+                        <label for="tributeName">THEIR NAME</label>
+                        <input
+                            type="text"
+                            id="tributeName"
+                            placeholder="A name worth remembering"
+                            maxlength="60"
+                        >
+
+                        <label for="tributeLove">THINGS THEY LOVED</label>
+                        <input
+                            type="text"
+                            id="tributeLove"
+                            placeholder="Flowers, music, food, places..."
+                            maxlength="150"
+                        >
+
+                        <label for="tributeMessage">A MESSAGE</label>
+                        <textarea
+                            id="tributeMessage"
+                            placeholder="What would you like to say about them?"
+                            maxlength="500"
+                        ></textarea>
+
+                        <button id="createTribute" class="primary-button">
+                            CREATE TRIBUTE ✿
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <div class="ofrenda-decoration bottom-decoration">
+                    ✿ &nbsp; ✺ &nbsp; ✿ &nbsp; ✺ &nbsp; ✿
+                </div>
+
+            </div>
+
+            <div id="tributeDisplay" class="tribute-display hidden">
+
+                <div class="tribute-flower">✿</div>
+
+                <span>REMEMBERED WITH LOVE</span>
+
+                <h3 id="displayName"></h3>
+
+                <p id="displayLove"></p>
+
+                <blockquote id="displayMessage"></blockquote>
+
+                <button id="printTribute" class="secondary-button">
+                    PRINT THIS TRIBUTE ↗
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- LOST FREQUENCIES -->
+
+        <section class="frequencies-section" id="frequencies">
+
+            <div class="section-label">04 / LOST FREQUENCIES</div>
+
+            <div class="frequency-heading">
+                <h2>Messages from <em>nowhere.</em></h2>
+
+                <p>
+                    The archive occasionally picks up transmissions
+                    from places it cannot identify.
+                </p>
+            </div>
+
+            <div class="frequency-display">
+
+                <div class="frequency-top">
+                    <span>FREQUENCY / UNKNOWN</span>
+                    <span class="signal-indicator">
+                        <span class="status-dot"></span> RECEIVING
+                    </span>
+                </div>
+
+                <div class="frequency-number" id="frequencyNumber">
+                    00.00
+                </div>
+
+                <div class="waveform" id="waveform">
+                    <span></span><span></span><span></span>
+                    <span></span><span></span><span></span>
+                    <span></span><span></span><span></span>
+                    <span></span><span></span><span></span>
+                    <span></span><span></span><span></span>
+                    <span></span><span></span><span></span>
+                    <span></span><span></span><span></span>
+                </div>
+
+                <p id="frequencyMessage">
+                    There is a story somewhere in the static.
+                </p>
+
+                <button class="frequency-button" id="tuneFrequency">
+                    TUNE INTO A SIGNAL ↗
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- FOOTER -->
+
+        <footer class="footer">
+
+            <div class="footer-top">
+
+                <div>
+                    <a href="#" class="logo">AFTER<span>IMAGE</span></a>
+
+                    <p>
+                        A little archive for everything
+                        that refuses to disappear.
+                    </p>
+                </div>
+
+                <div class="footer-info">
+                    <span>BUILT WITH OPEN TECHNOLOGY.</span>
+                    <span>KEPT BY HUMAN MEMORY.</span>
+                    <span>2026 © AFTERIMAGE PROJECT</span>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <span>END OF TRANSMISSION.</span>
+                <span>THE ARCHIVE REMAINS OPEN.</span>
+            </div>
+
+        </footer>
+
+    </main>
+
+    <script type="module" src="script.js"></script>
+
+</body>
+</html>
